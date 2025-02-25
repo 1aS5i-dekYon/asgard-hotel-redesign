@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asgard Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hamburger.css"/>
+    <link rel="stylesheet" href="slider.css"/>
+    <link rel="stylesheet" href="accordion.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <!-- <script src="wow.min.js"></script> -->
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="header">
+        <nav class="navibar">
+          <!-- <a href="" class="navi__logo"><img src="svg/icons/logo.png" alt="" width="80em" height="50em"></a> -->
+            <!-- logo.png будет только иконка "АС" без текста "Асгард отель" -->
+            <ul class="navi__menu">
+              <li class="navi__item">
+                <a href="#about-heading" aria-label="Перейти к разделу. О нас" class="navi__link">О нас</a>
+              </li>
+              <li class="navi__item">
+                <a href="#aboutsuits" aria-label="Перейти к разделу. Номера" class="navi__link">Номера</a>
+              </li>
+              <li class="navi__item">
+                <a href="#aboutaparts" aria-label="Перейти к разделу. Апартаменты" class="navi__link">Апартаменты</a>
+              </li>
+              <li class="navi__item">
+                <a href="#contacts" aria-label="Перейти к разделу. Контакты" class="navi__link">Контакты</a>
+              </li>
+              <li class="navi__item navi__item-big">
+                <a href="https://yandex.ru/maps/-/CDRVzK33" aria-label="Узнать расположение отеля на Яндекс Картах. город Калининград улица 9 Апреля дом 88 а" class="navi__link">
+                  <b>г.Калининград ул.9 Апреля д.88а</b>
+                </a>
+                <a href="tel:+7(4012)376-276"  aria-label="Номер стойки регистрации. +74012376276"class="navi__link"><b>+7 (4012) 376-276</b></a>
+              </li>
+              <li class="navi__item">
+                <a href="booking.html" class="navi__link">Забронировать</a>
+              </li>
+              <li class="navi__item-tablet">
+                <a href="https://asgardotel.ru/payment-and-return/" aria-label="Перейти к разделу. Оплата ив возврат" class="navi__link">Оплата и возврат</a>
+              </li>
+              <li class="navi__item-tablet">
+                <a href="https://asgardotel.ru/privacy-policy/" aria-label="Перейти к разделу. Политика конфиденцианальности" class="navi__link">Политика конфиденцианальности</a>
+              </li>
+            </ul>
+
+            <div class="hambbg">
+              <!-- вместо class "hambbg" будет "hamburger"-->
+              <div class="hamb">          
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+        </nav> 
+    </header>
+    <main>    
+      <article class="hero" aria-labelledby="hero-heading">
+        <h1 id="hero-heading">
+          <span>А</span><span>С</span><span>Г</span><span>А</span><span>Р</span><span>Д</span>
+        </h1>
+        <p class="under-title">отель</p>
+        <div class="gradient-image">
+          <img src="photos/decor.jpg" alt="Фотография">
+        </div>
+
+        <!-- <section class="py-5 py-md-6 parallax" style="padding-top: 2%; padding-bottom: 2%; margin-top: 3%;">      -->
+          <!-- <section >
+            <div> -->
+              <div class="bnovo" id="_bn_widget_"  >
+                <!-- <a href="https://bnovo.ru/" id="_bnovo_link_" target="_blank">Bnovo</a> -->
+              </div>
+     <script src="//widget.reservationsteps.ru/js/bnovo.js"></script>
+     <script type="text/javascript">
+     Bnovo_Widget.init(function(){
+     Bnovo_Widget.open('_bn_widget_', {
+       type: "horizontal",
+       uid: "975ac2e9-2188-4b93-852c-8774d2f15c66",
+       lang: "ru",
+       width: "60%",
+       background: "#E6DFC3",
+       bg_alpha: "5",
+       padding: "20",
+       border_radius: "4",
+       font_type: "inter",
+       font_size: "16",
+       title: "Забронировать онлайн",
+       title_color: "#AB894E",
+       title_size: "18",
+       inp_color: "#AB894E",
+       inp_bordhover: "#E6DFC3",
+       inp_bordcolor: "#00180B",
+       inp_alpha: "10",
+       btn_background: "##AB894E",
+       btn_background_over: "#D1C598",
+       btn_textcolor: "#00180B",
+       btn_textover: "#222222",
+       btn_bordcolor: "#b3812b",
+       btn_bordhover: "#b3812b",
+       text_concierge: "Получи скидку через Bnovo Concierge",
+       url: "http://asgardotel.ru/booking.html"
+     });
+     });
+     </script>
+      </article>
+      <section class="new-info" aria-labelledby="info-heading">
+        <svg class="new-info__decor">
+          <image width="100%" href="svg/new-info-decor-high.svg" />
+        </svg>
+        <h2 class="new-info__title" id="info-heading">new</h2>
+        <p class="new-info__text">Открыто бронирование на новогодние праздники.</p>
+        <p class="new-info__text">За дополнительной информацией обращайтесь к менеджеру по Whatsapp!</p>
+        <p class="new-info__text">нажми на номер +7(963)351-88-42 (Whatsapp)</p>
+        <svg class="new-info__decor new-info__decor_low">
+          <image width="100%" href="svg/new-info-decor-high.svg" />
+        </svg>
+      </section>
+      <section class="about" aria-labelledby="about-heading">
+        <h2 class="about__title" id="about-heading">О нас</h2>
+        <p class="about__subtitle">Почему выбирают Асгард отель?</p>
+        <ol class="about__list">
+          <li>
+            <p class="about__list-text">
+              <span class="about__list-text_uppercase">удобное расположение</span> для проведения прогулок до достопримечательностей города
+            </p>
+          </li>
+          <li>
+            <p class="about__list-text">
+              <span class="about__list-text_uppercase">отличный сервис</span>, который учтет все ваши пожелания
+            </p>
+          </li>
+          <li>
+            <p class="about__list-text">
+              возможность <span class="about__list-text_uppercase">организовать</span> для вас <span class="about__list-text_uppercase">экскурсию и трансфер</span> до отеля
+            </p>
+          </li>
+          <li>
+            <p class="about__list-text">
+              <span class="about__list-text_uppercase">качественные номера</span> со всеми современными удобствами
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="rooms" aria-labelledby="rooms-heading">
+        <h2 class="rooms__title" id="rooms-heading">номера</h2>
+        <div class="rooms__paragraphs">
+          <p class="rooms__paragraphs-item">
+            Устройтесь как дома в одном из прекрасно отделанных номеров отеля Асгард.
+          </p>
+          <p class="rooms__paragraphs-item">
+            В каждом номере вас ждет мини-кухня с местом для приема пищи, телевизор и набор личной гигиены.
+          </p>
+          <p class="rooms__paragraphs-item">
+            Так же номера оборудованы кондиционером и двойным остеклением, что позволяет сохранить комфорт проживания в самом центре города.
+          </p>
+          <p class="rooms__paragraphs-item">
+            Завтраки начинаются в будние дни с 9:00 в выходные с 9:30 и  организовываются в кафе в соседнем доме ( 100 метров от отеля).
+          </p>
+        </div>
+        <ul class="rooms__amenities">
+          <li class="rooms__amenities-item">
+            <span>Круглосуточное обслуживнаие</span>
+            <svg class="icon">
+              <image width="100%" href="svg/icons/around-clock-icon.svg" />
+            </svg>
+          </li>
+          <li class="rooms__amenities-item">
+            <span>Wi-Fi в номере</span>
+            <svg class="icon">
+              <image width="100%" href="svg/icons/wifi-icon.svg" />
+            </svg>
+          </li>
+          <li class="rooms__amenities-item">
+            <span>Набор для кофе и чая</span>
+            <svg class="icon">
+              <image width="100%" href="svg/icons/coffee-icon.svg" />
+            </svg>
+          </li>
+          <li class="rooms__amenities-item">
+            <span>Для некурящих</span>
+            <svg class="icon">
+              <image width="100%" href="svg/icons/no-smoking-icon.svg" />
+            </svg>
+          </li>
+          <li class="rooms__amenities-item">
+            <span>Детская кровать по запросу</span>
+            <svg class="icon">
+              <image width="100%" href="svg/icons/child-bed-icon.svg" />
+            </svg>
+          </li>
+        </ul>
+        <div class="rooms__photos-amenities">
+          <div class="rooms__capsule-photos">
+            <img src="photos/table1.jpg" alt="">
+            <img src="photos/mini-kitchen.jpg" alt="">
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slider__appearance-circle"></div>
+          <div id="double-rooms-slider" class="rooms__slider">
+            <img src="./photos/pinkish-double-bedroom.webp" alt="" class="room__photo">
+            <img src="./photos/grey-double-bedroom.webp" alt="" class="room__photo">
+            <img src="./photos/gold-double-bedroom.webp" alt="" class="room__photo">
+            <img src="./photos/pink-double-bedroom.webp" alt="" class="room__photo">
+            <img src="./photos/brown-double-bedroom.webp" alt="" class="room__photo">
+          </div>
+          <div id="family-rooms-slider" class="rooms__slider">
+            <img src="./photos/white-family-bedroom.webp" alt="" class="room__photo">
+            <img src="./photos/blue-family-bedroom.webp" alt="" class="room__photo">
+            <img src="./photos/pink-family-bedroom.webp" alt="" class="room__photo">
+            <img src="./photos/green-family-bedroom.webp" alt="" class="room__photo">
+          </div>
+          <ul class="room__links">
+            <li class="room__item">
+              <a href="double-rooms.html" id="double-rooms" class="room__link">двухместный</a>
+            </li>
+            <li class="room__item">
+              <a href="family-rooms.html" id="family-rooms" class="room__link">семейный</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section  class="apartments" aria-labelledby="apartments-heading">
+        <h2 class="apartments__title" id="apartments-heading">апартаменты</h2>
+        <div class="accordion">
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-1" class="accordion__item-input">
+            <label for="accordion-1" class="accordion__item-label">
+              <div class="icon-container">
+                <svg class="icon">
+                  <image width="100%" href="svg/icons/person-icon.svg"/>
+                </svg>
+                <span class="icon__text_superscript" aria-hidden="true">x</span>
+                <span class="icon__text">8</span>
+              </div>
+              <div class="accordion__item-title">
+                <h4>
+                  <a href="https://asgardotel.ru/deluxe-apart" class="accordion__item-title-header"><span>делюкс</span></a>
+                  <span class="accordion__item-subtitle">г. Калининград</span>
+                </h4>
+              </div>
+            </label>
+            <div class="accordion__item-content">
+              <div class="accordion__photo">
+                <img src="photos/aparts/deluxe/deluxe-bedroom-mini.webp" alt="Фотография">
+              </div>
+              <div class="accoridon__item-content-action">
+                <strong>
+                  <span aria-hidden="true">*</span>
+                  <span>При заселении взимается залог в размере 5000 рублей</span>
+                </strong>
+                <a href="ghbooking.html?&amp;onlyrooms=309055" class="apart__booking-link">Забронировать</a>
+                <!-- <a href="https://asgardotel.ru/deluxe-apart" class="apart__about"><span>Подробнее</span></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-2" class="accordion__item-input">
+            <label for="accordion-2" class="accordion__item-label">
+              <div class="icon-container">
+                <svg class="icon">
+                  <image width="100%" href="svg/icons/person-icon.svg"/>
+                </svg>
+                <span class="icon__text_superscript" aria-hidden="true">x</span>
+                <span class="icon__text">4</span>
+              </div>
+              <div class="accordion__item-title">
+                <h4>
+                  <a href="https://asgardotel.ru/luxury-apart" class="accordion__item-title-header"><span>люкс</span></a>
+                  <span class="accordion__item-subtitle">г. Калининград</span>
+                </h4>
+              </div>
+            </label>
+            <div class="accordion__item-content">
+              <div class="accordion__photo">
+                <img src="photos/aparts/luxury/luxury-bedroom-mini.webp" alt="Фотография">
+              </div>
+              <div class="accoridon__item-content-action">
+                <strong>
+                  <span aria-hidden="true">*</span>
+                  <span>При заселении взимается залог в размере 5000 рублей</span>
+                </strong>
+                <a href="ghbooking.html?&amp;onlyrooms=309057" class="apart__booking-link">Забронировать</a>
+                <!-- <a href="https://asgardotel.ru/luxury-apart" class="apart__about"><span>Подробнее</span></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-3" class="accordion__item-input">
+            <label for="accordion-3" class="accordion__item-label">
+              <div class="icon-container">
+                <svg class="icon">
+                  <image width="100%" href="svg/icons/person-icon.svg"/>
+                </svg>
+                <span class="icon__text_superscript" aria-hidden="true">x</span>
+                <span class="icon__text">4</span>
+              </div>
+              <div class="accordion__item-title">
+                <h4>
+                  <a href="https://asgardotel.ru/standard-apart" class="accordion__item-title-header"><span>стандарт</span></a>
+                  <span class="accordion__item-subtitle">г. Калининград</span>
+                </h4>
+              </div>
+            </label>
+            <div class="accordion__item-content">
+              <div class="accordion__photo">
+                <img src="photos/aparts/standard/standard-bedroom-mini.webp" alt="Фотография">
+              </div>
+              <div class="accoridon__item-content-action">
+                <strong>
+                  <span aria-hidden="true">*</span>
+                  <span>При заселении взимается залог в размере 5000 рублей</span>
+                </strong>
+                <a href="ghbooking.html?&amp;onlyrooms=309059" class="apart__booking-link">Забронировать</a>
+                <!-- <a href="https://asgardotel.ru/standard-apart" class="apart__about"><span>Подробнее</span></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-4" class="accordion__item-input">
+            <label for="accordion-4" class="accordion__item-label">
+              <div class="icon-container">
+                <svg class="icon">
+                  <image width="100%" href="svg/icons/person-icon.svg"/>
+                </svg>
+                <span class="icon__text_superscript" aria-hidden="true">x</span>
+                <span class="icon__text">2</span>
+              </div>
+              <div class="accordion__item-title">
+                <h4>
+                  <a href="https://asgardotel.ru/standard-plus-apart" class="accordion__item-title-header"><span>стандарт+</span></a>
+                  <span class="accordion__item-subtitle">г. Калининград</span>
+                </h4>
+              </div>
+            </label>
+            <div class="accordion__item-content">
+              <div class="accordion__photo">
+                <img src="photos/aparts/standard+/standard-plus-bedroom-mini.webp" alt="Фотография">
+              </div>
+              <div class="accoridon__item-content-action">
+                <strong>
+                  <span aria-hidden="true">*</span>
+                  <span>При заселении взимается залог в размере 5000 рублей</span>
+                </strong>
+                <a href="ghbooking.html?&amp;onlyrooms=309058" class="apart__booking-link">Забронировать</a>
+                <!-- <a href="https://asgardotel.ru/standard-plus-apart" class="apart__about"><span>Подробнее</span></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-5" class="accordion__item-input">
+            <label for="accordion-5" class="accordion__item-label">
+              <div class="icon-container">
+                <svg class="icon">
+                  <image width="100%" href="svg/icons/person-icon.svg"/>
+                </svg>
+                <span class="icon__text_superscript" aria-hidden="true">x</span>
+                <span class="icon__text">5</span>
+              </div>
+              <div class="accordion__item-title">
+                <h4>
+                  <a href="https://asgardotel.ru/premium-apart" class="accordion__item-title-header"><span>премиум</span></a>
+                  <span class="accordion__item-subtitle">г. Калининград</span>
+                </h4>
+              </div>
+            </label>
+            <div class="accordion__item-content">
+              <div class="accordion__photo">
+                <img src="photos/aparts/premium/premium-bedroom-mini.webp" alt="Фотография">
+              </div>
+              <div class="accoridon__item-content-action">
+                <strong>
+                  <span aria-hidden="true">*</span>
+                  <span>При заселении взимается залог в размере 5000 рублей</span>
+                </strong>
+                <a href="ghbooking.html?&amp;onlyrooms=309057" class="apart__booking-link">Забронировать</a>
+                <!-- <a href="https://asgardotel.ru/premium-apart" class="apart__about"><span>Подробнее</span></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-6" class="accordion__item-input">
+            <label for="accordion-6" class="accordion__item-label">
+              <div class="icon-container">
+                <svg class="icon">
+                  <image width="100%" href="svg/icons/person-icon.svg"/>
+                </svg>
+                <span class="icon__text_superscript" aria-hidden="true">x</span>
+                <span class="icon__text">4</span>
+              </div>
+              <div class="accordion__item-title">
+                <h4>
+                  <a href="https://asgardotel.ru/premium2-apart" class="accordion__item-title-header"><span>премиум №2</span></a>
+                  <span class="accordion__item-subtitle">г. Калининград</span>
+                </h4>
+              </div>
+            </label>
+            <div class="accordion__item-content">
+              <div class="accordion__photo">
+                <img src="photos/aparts/premium2/premium2-bedroom-mini.webp" alt="Фотография">
+              </div>
+              <div class="accoridon__item-content-action">
+                <strong>
+                  <span aria-hidden="true">*</span>
+                  <span>При заселении взимается залог в размере 5000 рублей</span>
+                </strong>
+                <a href="ghbooking.html?&amp;onlyrooms=309050" class="apart__booking-link">Забронировать</a>
+                <!-- <a href="https://asgardotel.ru/premium2-apart" class="apart__about"><span>Подробнее</span></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-7" class="accordion__item-input">
+            <label for="accordion-7" class="accordion__item-label">
+              <div class="icon-container">
+                <svg class="icon">
+                  <image width="100%" href="svg/icons/person-icon.svg"/>
+                </svg>
+                <span class="icon__text_superscript" aria-hidden="true">x</span>
+                <span class="icon__text">2</span>
+              </div>
+              <div class="accordion__item-title">
+                <h4>
+                  <a href="https://asgardotel.ru/zelenogradsk-apart" class="accordion__item-title-header"><span>зеленоградск</span></a>
+                  <span class="accordion__item-subtitle">г. Зеленоградск</span>
+                </h4>
+              </div>
+            </label>
+            <div class="accordion__item-content">
+              <div class="accordion__photo">
+                <img src="photos/aparts/zelik/zelik-bedroom-mini.webp" alt="Фотография">
+              </div>
+              <div class="accoridon__item-content-action">
+                <strong>
+                  <span aria-hidden="true">*</span>
+                  <span>При заселении взимается залог в размере 5000 рублей</span>
+                </strong>
+                <a href="ghbooking.html?&amp;onlyrooms=315288" class="apart__booking-link">Забронировать</a>
+                <!-- <a href="https://asgardotel.ru/zelenogradsk-apart" class="apart__about"><span>Подробнее</span></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section  class="contacts" aria-labelledby="contacts-heading">
+        <h2 class="contacts__title" id="contacts-heading">контакты</h2>
+        <address>
+          <dl class="contacts__list">
+            <dt>
+              Стойка регистрации
+              <span aria-hidden="true">:</span>
+            </dt>
+            <dd>
+              <a href="tel:+7(4012)376-276">+7(4012)376-276</a>
+            </dd>
+            <dt>
+              Whatsapp менеджера по бронированиям
+              <span aria-hidden="true">:</span>
+            </dt>
+            <dd>
+              <a href="https://wa.me/message/THPKLZHJ67LTH1">+7(963)351-88-42</a>
+            </dd>
+            <dt>
+              E-mail
+              <span aria-hidden="true">:</span>
+            </dt>
+            <dd>
+              <a href="mailto:asgardhotel@mail.ru">asgardhotel@mail.ru</a>
+            </dd>
+          </dl>
+        </address>
+        <div class="map"></div>
+      </section>
+      <nav class="page-end-navi">
+        <ul class="page-end-navi__list">
+          <li class="page-end-navi__item">
+            <a href="#about-heading" aria-label="Вернуться к разделу. О нас" class="page-end-navi__link">О нас</a>
+          </li>
+          <li class="page-end-navi__item">
+            <a href="#aboutsuits" aria-label="Вернуться к разделу. Номера" class="page-end-navi__link">Номера</a>
+          </li>
+          <li class="page-end-navi__item">
+            <a href="#aboutaparts" aria-label="Вернуться к разделу. Апартаменты" class="page-end-navi__link">Апартаменты</a>
+          </li>
+          <li class="page-end-navi__item">
+            <a href="#contacts" aria-label="Перейти к разделу. Контакты" class="page-end-navi__link">Контакты</a>
+          </li>
+          <li class="page-end-navi__item">
+            <a href="https://asgardotel.ru/payment-and-return/" aria-label="Перейти к разделу. Оплата ив возврат" class="page-end-navi__link">Оплата и возврат</a>
+          </li>
+          <li class="page-end-navi__item">
+            <a href="https://asgardotel.ru/privacy-policy/" aria-label="Перейти к разделу. Политика конфиденцианальности" class="page-end-navi__link">Политика конфиденцианальности</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <script src="https://forms.yandex.ru/_static/embed.js"></script><iframe src="https://forms.yandex.ru/u/679fb8314936390aa550e6d9/?iframe=1" frameborder="0" name="ya-form-679fb8314936390aa550e6d9" width="650"></iframe> -->
+    </main>
+    <footer class="footer border-top py-3 mt-5 bg-light">
+    </footer>
+</body>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="slider.js"></script>
+</html>
